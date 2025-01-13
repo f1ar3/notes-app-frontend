@@ -18,8 +18,9 @@ import {Highlight} from "@tiptap/extension-highlight";
 import Link from "@tiptap/extension-link";
 import {TextAlign} from "@tiptap/extension-text-align";
 
-import {FontSizeExtension} from "@/extensions/font-size";
 import useEditorStore from "@/app/components/hooks/useEditorStore"
+import {FontSizeExtension} from "@/extensions/font-size";
+import {LineHeightExtension} from "@/extensions/line-height";
 
 export const Editor = () => {
     const {setEditor} = useEditorStore();
@@ -70,7 +71,11 @@ export const Editor = () => {
                     defaultProtocol: 'https'
                 }),
                 TextAlign.configure({
-                    types: ['heading', 'paragraph']
+                    types: ['heading', 'paragraph'],
+                }),
+                LineHeightExtension.configure({
+                    types: ['heading', 'paragraph'],
+                    defaultLineHeight: 'normal'
                 }),
                 TaskList,
                 Table,

@@ -1,5 +1,5 @@
 import useEditorStore from "@/app/components/hooks/useEditorStore";
-import {CirclePicker, ColorResult} from "react-color";
+import {SketchPicker, ColorResult} from "react-color";
 import {DropdownMenu, DropdownMenuContent, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
 
 const TextColorButton = () => {
@@ -19,8 +19,8 @@ const TextColorButton = () => {
                     <div className='h-0.5 w-full' style={{backgroundColor: value}}></div>
                 </div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className='p-2.5'>
-                <CirclePicker
+            <DropdownMenuContent className='p-0'>
+                <SketchPicker
                     color={value}
                     onChange={onChange}
                 />

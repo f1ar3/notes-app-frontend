@@ -20,6 +20,7 @@ import HighlightColorButton from "@/app/components/buttons/HighlightColorButton"
 import LinkButton from "@/app/components/buttons/LinkButton";
 import ImageButton from "@/app/components/buttons/ImageButton";
 import AlignButton from "@/app/components/buttons/AlignButton";
+import ListButton from "@/app/components/buttons/ListButton";
 
 
 const Toolbar = () => {
@@ -120,6 +121,8 @@ const Toolbar = () => {
             <LinkButton />
             <ImageButton />
             <AlignButton />
+            <ListButton />
+
             {sections[2].map((item) => (
                 <ToolbarButton key={item.label} {...item} />
             ))}

@@ -22,6 +22,7 @@ import ImageButton from "@/app/components/buttons/ImageButton";
 import AlignButton from "@/app/components/buttons/AlignButton";
 import ListButton from "@/app/components/buttons/ListButton";
 import FontSizeButton from "@/app/components/buttons/FontSizeButton";
+import LineHeightButton from "@/app/components/buttons/LineHeightButton";
 
 
 const Toolbar = () => {
@@ -109,6 +110,7 @@ const Toolbar = () => {
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
             <HeadingLevelButton />
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
+            <FontSizeButton />
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
 
             {sections[1].map((item) => (
@@ -123,7 +125,7 @@ const Toolbar = () => {
             <ImageButton />
             <AlignButton />
             <ListButton />
-            <FontSizeButton />
+            <LineHeightButton />
 
             {sections[2].map((item) => (
                 <ToolbarButton key={item.label} {...item} />

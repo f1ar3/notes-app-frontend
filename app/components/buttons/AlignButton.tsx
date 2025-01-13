@@ -1,9 +1,6 @@
 import useEditorStore from "@/app/components/hooks/useEditorStore";
-import {useState} from "react";
 import {DropdownMenu, DropdownMenuContent, DropdownMenuTrigger} from "@/components/ui/dropdown-menu";
-import {AlignCenterIcon, AlignJustifyIcon, AlignLeftIcon, AlignRightIcon, Link2Icon} from "lucide-react";
-import {Input} from "@/components/ui/input";
-import {Button} from "@/components/ui/button";
+import {AlignCenterIcon, AlignJustifyIcon, AlignLeftIcon, AlignRightIcon} from "lucide-react";
 import {cn} from "@/lib/utils";
 
 const AlignButton = () => {

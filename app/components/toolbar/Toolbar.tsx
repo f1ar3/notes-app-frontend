@@ -21,6 +21,7 @@ import LinkButton from "@/app/components/buttons/LinkButton";
 import ImageButton from "@/app/components/buttons/ImageButton";
 import AlignButton from "@/app/components/buttons/AlignButton";
 import ListButton from "@/app/components/buttons/ListButton";
+import FontSizeButton from "@/app/components/buttons/FontSizeButton";
 
 
 const Toolbar = () => {
@@ -122,6 +123,7 @@ const Toolbar = () => {
             <ImageButton />
             <AlignButton />
             <ListButton />
+            <FontSizeButton />
 
             {sections[2].map((item) => (
                 <ToolbarButton key={item.label} {...item} />

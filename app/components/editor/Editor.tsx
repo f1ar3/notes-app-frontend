@@ -19,7 +19,6 @@ import Link from "@tiptap/extension-link";
 import {TextAlign} from "@tiptap/extension-text-align";
 
 import {FontSizeExtension} from "@/extensions/font-size";
-
 import useEditorStore from "@/app/components/hooks/useEditorStore"
 
 export const Editor = () => {

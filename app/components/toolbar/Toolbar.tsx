@@ -16,6 +16,7 @@ import {Separator} from "@/components/ui/separator";
 import FontFamilyButton from "@/app/components/buttons/FontFamilyButton";
 import HeadingLevelButton from "@/app/components/buttons/HeadingLevelButton";
 import TextColorButton from "@/app/components/buttons/TextColorButton";
+import HighlightColorButton from "@/app/components/buttons/HighlightColorButton";
 
 
 const Toolbar = () => {
@@ -110,6 +111,7 @@ const Toolbar = () => {
             ))}
 
             <TextColorButton />
+            <HighlightColorButton />
 
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
             {sections[2].map((item) => (

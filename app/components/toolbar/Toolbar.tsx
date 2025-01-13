@@ -17,6 +17,7 @@ import FontFamilyButton from "@/app/components/buttons/FontFamilyButton";
 import HeadingLevelButton from "@/app/components/buttons/HeadingLevelButton";
 import TextColorButton from "@/app/components/buttons/TextColorButton";
 import HighlightColorButton from "@/app/components/buttons/HighlightColorButton";
+import LinkButton from "@/app/components/buttons/LinkButton";
 
 
 const Toolbar = () => {
@@ -114,6 +115,7 @@ const Toolbar = () => {
             <HighlightColorButton />
 
             <Separator orientation='vertical' className='h-6 bg-neutral-300' />
+            <LinkButton />
             {sections[2].map((item) => (
                 <ToolbarButton key={item.label} {...item} />
             ))}

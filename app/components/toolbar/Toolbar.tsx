@@ -131,8 +131,8 @@ const Toolbar = () => {
                 <ToolbarButton key={item.label} {...item} />
             ))}
 
-
         </div>
+
     )
 }
 
